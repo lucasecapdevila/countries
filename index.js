@@ -30,6 +30,9 @@ app.get('/api/borders/:countryCode', async (req, res) => {
   }
 })
 
+
+//! Links to points b and c (https://countriesnow.space/api/v0.1/countries/population - https://countriesnow.space/api/v0.1/countries/flag/images) are currently not working properly.
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
 })
