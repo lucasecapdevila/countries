@@ -17,7 +17,7 @@ app.get('/api/countries', async (req, res) => {
 })
 
 
-// Route to fetch country info
+// Route to fetch country borders
 app.get('/api/borders/:countryCode', async (req, res) => {
   const { countryCode } = req.params
   try {
