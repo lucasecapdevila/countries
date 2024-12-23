@@ -1,9 +1,11 @@
-const express = require('express')
-const axios = require('axios')
+import express from 'express'
+import axios from 'axios'
+import cors from 'cors';
 
 const app = express()
 const PORT = 3000
 
+app.use(cors())
 
 // Start the server - Route to fetch available countries
 app.get('/api/countries', async (req, res) => {
